@@ -5,7 +5,7 @@ import styles from "../styles/PostView.module.css";
 const PostsView = () => {
   const [menus, setMenus] = useState();
   useEffect(() => {
-    axios.get("http://localhost:3000/api/crawl").then((res) => {
+    axios.get("https://hyteria.vercel.app/api/crawl").then((res) => {
       console.log(res.data);
       setMenus(res.data);
     });
